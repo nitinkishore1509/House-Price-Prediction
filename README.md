@@ -64,13 +64,12 @@ The notebook walks through **data exploration**, **feature engineering**, **mode
 - Residual distribution plot to validate model assumptions
 
 ---
+# Example input
+user_data = [[65000, 5, 7, 4, 30000]]  # [Income, Age, Rooms, Bedrooms, Population]
 
-## 📈 Model Performance
-| Metric | Value |
-|--------|-------|
-| MAE    | *Low* |
-| MSE    | *Low* |
-| RMSE   | *Low* |
+predicted_price = lm.predict(user_data)
+print(f"Predicted House Price: ${predicted_price[0]:,.2f}")
+
 
 
 ---
